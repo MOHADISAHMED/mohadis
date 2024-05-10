@@ -36,8 +36,8 @@
                                         <td><?php echo $values ['productDescription']?></td>
                                         <td><?php echo $values ['CatName']?></td>
                                         <td><img src=<?php echo $proRef.$values['productImage']?> alt="" width="88"> </td>                                                                         
-                                      <td><a href="" class="btn btn-success">Edit</a></td>
-                                      <td><a href= "" class ="btn btn-danger">Delete</a></td>  
+                                      <td><a href="updateproducts.php?pid=<?php echo $values ['productid']?>" class="btn btn-success">Edit</a></td>
+                                      <td><a href= "?pdeleteKey=<?php echo $values['productid']?>" class ="btn btn-danger">Delete</a></td>  
                                     </tr>
                                                                      
                                         <?php
