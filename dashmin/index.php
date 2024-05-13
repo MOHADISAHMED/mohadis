@@ -1,8 +1,13 @@
 
 <?php
     include ("component/header.php");
-?>
-          
+    if(!$_SESSION['sessionEmail']){
+        echo "<script>location.assign('../cozastore-master/index.php')</script>";
+    }
+ if($_SESSION['sessionRole'] == "user"){
+            echo "<script>location.assign('../cozastore-master/index.php')</script>";
+        }
+        ?>
         <!-- Sidebar End -->
 
 

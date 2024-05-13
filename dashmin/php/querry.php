@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("dbconn.php");
 $catref="img/category/";
 $proRef = "img/products/";

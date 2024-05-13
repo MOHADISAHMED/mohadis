@@ -38,20 +38,6 @@ if(isset($_GET['pid']) ){
                                            <?php
                                         }
                                         ?>
-                                        <?php
-//$selectedproductCatid = $values['productCatid']; // Assuming you have this value already
-
-// Modify the second query to exclude the selected product category ID
-$querry = $pdo->query("SELECT * FROM categories WHERE Catid != $selectedproductCatid");
-$proRow = $querry->fetchAll(PDO::FETCH_ASSOC);
-
-// Iterate over the fetched categories to populate the dropdown
-foreach ($proRow as $values) {
-?>
-<option value="<?php echo $values['Catid'] ?>"><?php echo $values['Catname'] ?></option>
-<?php
-}
-?>
 
                                     </select>
                                 </div>
