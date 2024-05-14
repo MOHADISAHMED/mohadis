@@ -109,6 +109,31 @@ include('php/query.php')
 							<li>
 								<a href="contact.html">Contact</a>
 							</li>
+
+							<?php if(!isset($_SESSION['sessionEmail'])){ ?>   
+                   
+                         <li>
+								<a href="login.php">login</a>
+							</li>
+                       <?php
+							}
+						?>
+
+                        <?php if(isset($_SESSION['sessionEmail'])){
+						?>
+							
+							<li>
+								<a href="logout.php">Logout</a>
+							</li>
+
+							<li>
+								<a href="profile.php">Profile</a>
+							</li>
+							
+							
+							<?php
+						}?>
+						
 						</ul>
 					</div>	
 

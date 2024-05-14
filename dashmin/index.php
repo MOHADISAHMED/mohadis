@@ -2,7 +2,7 @@
 <?php
     include ("component/header.php");
     if(!$_SESSION['sessionEmail']){
-        echo "<script>location.assign('../cozastore-master/index.php')</script>";
+        echo "<script> alert('login first to see your account'); location.assign('../cozastore-master/login.php')</script>";           
     }
  if($_SESSION['sessionRole'] == "user"){
             echo "<script>location.assign('../cozastore-master/index.php')</script>";

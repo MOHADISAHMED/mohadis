@@ -2,6 +2,6 @@
 session_start();
 session_unset();
 echo "<script>alert('logout successfully');
-location.assign(login.php)
+location.assign('index.php')
 </script>";
 ?>
