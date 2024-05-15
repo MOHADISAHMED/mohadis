@@ -7,6 +7,8 @@ if(!$_SESSION['sessionEmail']){
     alert('login first to see your account')
     location.assign('login.php')</script>";
 }
+
+if($_SESSION)
 ?>
 
 <?php

@@ -182,7 +182,7 @@ include ("php/querry.php");
                             <span class="d-none d-lg-inline-flex">Mohadis Ahmed</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
-                        */<a href="updateuser.php?uid=<?php echo $_SESSION['sessionid']?>" class="dropdown-item">Profile</a>
+                        <a href="" class="dropdown-item">Profile</a>
                             <a href="#" class="dropdown-item">Settings</a>
                             <a href="logout.php" class="dropdown-item">Log Out</a>
                         </div>
