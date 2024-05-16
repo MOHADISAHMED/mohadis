@@ -1,7 +1,7 @@
 <?php
 session_start();
-$CatImageRef= "../dashmin/img/category/";
-$ProImageRef= "../dashmin/img/products/";
+$catImageRef= "../dashmin/img/category/";
+$proImageRef= "../dashmin/img/products/";
 include('dbcon.php');
 if(isset($_POST['register'])){
     $userName = $_POST['name'];
