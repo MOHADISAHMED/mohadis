@@ -255,12 +255,8 @@ include("components/header.php");
 					$query->bindParam("pid" , $catId);
 					$query->execute();
 					$prodata = $query ->FetchAll(PDO::FETCH_ASSOC);
-					foreach($prodata as $provalues){
-						?>				
-				
-	<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
-
-
+					foreach($prodata as $proVal){
+						?>								
                  <?php					 					
 					}
 				}
@@ -269,7 +265,7 @@ include("components/header.php");
 					$rowPro = $query->FetchAll(PDO::FETCH_ASSOC);
 					foreach($rowPro as $proVal){
 						?>
-									
+						<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">				
 					<div class="block2">
 						<div class="block2-pic hov-img0">
 							<img src="<?php echo $proImageRef.$proVal['productImage']?>" alt="IMG-PRODUCT">
@@ -277,12 +273,12 @@ include("components/header.php");
 
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
-								<a href="product-detail.php" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								<a href="product-detail.php?pid=<?php echo $proVal['productid']?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
 									<?php echo $proVal['productName']?>
 								</a>
 
 								<span class="stext-105 cl3">
-								$<?php echo $proVal['productName']?>
+								$:<?php echo $proVal['productPrice']?>
 								</span>
 							</div>
 
